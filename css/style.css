@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  
+  html {
+    font-size: 10px; 
+    /*10px = 1rem */
+    background-color: #100b00; 
+    color: white;
+  }
+
+  /* SECTION */
+  section {
+    background-color: tomato;
+    width: 32rem;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    padding: 2rem 0;
+  }
+
+  .section-header{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: black 0.1rem 0.1rem;
+  }
+
+  /* TODO */
+  .todo-input{
+    height: 3rem;
+    width: 24rem;
+  }
+  .todo-button{
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+  }
+
+  .todo-container{
+    background-color: whitesmoke;
+  }
+  .todo-list{
+    background-color: gold;
+  }
+
+
+  /* FONT AWESOME FAVICONS */
+  .fa-plus-square{
+    cursor: unset;
+  }
+
+  
