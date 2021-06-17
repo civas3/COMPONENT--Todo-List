@@ -6,51 +6,137 @@
   html {
     font-size: 10px; 
     /*10px = 1rem */
-    background-color: #100b00; 
-    color: white;
+    background-color: white; 
+    color: black;
+    background: rgb(2,63,106);
+background: linear-gradient(90deg, rgba(2,63,106,1) 0%, rgba(0,212,255,1) 33%, rgba(214,213,218,1) 91%);
+   
+  }
+ 
+
+  .row{
+    /* background-color: saddlebrown; */
   }
 
   /* SECTION */
   section {
-    background-color: tomato;
-    width: 32rem;
-    height: 100%;
+    width: 36rem;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 2%;
     padding: 2rem 0;
   }
 
   .section-header{
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    text-shadow: black 0.1rem 0.1rem;
+    font-size: 3.8rem;
+    text-shadow: black 0.2rem -0.1rem;
+    color: rgb(255, 7, 7);
+    text-transform: uppercase;
+  }
+
+  form{
+    background: #ceecf8;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    -webkit-box-shadow: 0px -4px 5px -2px rgb(63, 62, 62);
+    -moz-box-shadow: 0px -4px 5px -2px rgba(63, 62, 62);
+    box-shadow: 0px -4px 5px -2px rgb(63, 62, 62);
+    padding: 3rem 2rem;
   }
 
   /* TODO */
   .todo-input{
-    height: 3rem;
-    width: 24rem;
+    height: 4rem;
+    width: 27rem;
+    font-size: 2rem;
+    border: none;
   }
+
+  .todo-input:focus {
+    outline: 2px solid #3a7bd5;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(58,123,213,1);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(58,123,213,1);
+    box-shadow: 0px 0px 10px 1px rgba(58,123,213,1);
+  }
+
   .todo-button{
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
     cursor: pointer;
+    background-color:  #3a7bd5;
+    color: white;
+    border: 2px solid #3a7bd5;
+
   }
 
   .todo-container{
-    background-color: whitesmoke;
+  
   }
+
   .todo-list{
-    background-color: gold;
+    /* background-color: gold; */
+    margin-top: 1.5rem;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;   
   }
+
+  .todo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: #ceecf8;   
+    /* border: 2px solid #3a7bd5; */
+    -webkit-box-shadow: 0px -4px 5px -2px rgb(63, 62, 62);
+    -moz-box-shadow: 0px -4px 5px -2px rgba(63, 62, 62);
+    box-shadow: 0px -4px 5px -2px rgb(63, 62, 62);
+    opacity: 0.9;
+     
+  }
+
+  .todo-item{
+    background-color: #ffffffcb;
+    list-style: none;
+    font-size: 2rem;
+    padding: 1rem 0.3rem;
+    padding-left: 1rem;
+    overflow-wrap: break-word;
+
+    width: 26rem !important;
+    height: auto;
+    /* display: flex; */
+    align-items: center;
+    letter-spacing: 1px;
+
+  }
+
+  .complete-btn{
+    margin: 0 0.7rem;
+    background-color: yellowgreen;
+    padding: 0.2rem;
+  }
+
+  .trash-btn{
+    height: 100%;
+    background-color: red;
+    padding: 0.2rem;
+    color: #f2f2f2;
+  }
+
+  
+ 
 
 
   /* FONT AWESOME FAVICONS */
-  .fa-plus-square{
+  .fa-plus-square, .complete-btn, .trash-btn{
     cursor: unset;
+    font-size: 2rem;
+
   }
 
   
