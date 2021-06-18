@@ -129,10 +129,17 @@ background: linear-gradient(90deg, rgba(2,63,106,1) 0%, rgba(0,212,255,1) 33%, r
     color: #f2f2f2;
   }
 
-  /* Button on click toggle */
+  /* Button on click */
 .completed{
   text-decoration: line-through;
   opacity: 0.3;
+}
+
+.trash-animation{
+  transform:   rotateX(100deg) translateY(1rem);
+  
+  transition: 0.7s;
+  opacity: 0;
 }
 
 
@@ -145,5 +152,8 @@ background: linear-gradient(90deg, rgba(2,63,106,1) 0%, rgba(0,212,255,1) 33%, r
   .fa-trash, .fa-check{
      pointer-events: none; 
   }
+
+
+  
 
   

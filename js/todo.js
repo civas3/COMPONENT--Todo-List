@@ -52,7 +52,13 @@ function deleteCheck(element){
         //because todo in not decleared globaly, we need to declear here
         // .trash-btn parent element = .todo element
         const todo = item.parentElement;
-        todo.remove();
+        //adding animation on .trash-animation on click
+        todo.classList.add("trash-animation");
+        //even listener that going to wait for the animation to finish before removing todo element
+        todo.addEventListener("transitionend", function(){
+            todo.remove();
+        });
+        
     }
     //Check completed Todo item
     if(item.classList[0] === "complete-btn"){
