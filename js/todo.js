@@ -5,6 +5,7 @@ const todoList = document.querySelector(".todo-list");
 
 //Event Listeners
 todoButton.addEventListener('click', addTodo);
+todoList.addEventListener('click', deleteCheck);
 
 
 //Functions - onClick todoButton -> create todo-item(li) with two buttons inside -> todoDiv
@@ -40,4 +41,17 @@ function addTodo(event){
     todoList.appendChild(todoDiv);
     //CLEAR Todo INPUT VALUE after submit
     todoInput.value = "";
+}
+
+function deleteCheck(element){
+    //Check if the onClick is working F12 console --> 
+    // console.log(e.target);
+    const item = element.target;
+    //Delete Todo item when clicked on trash-btn
+    if(item.classList[0] === "trash-btn"){
+        //because todo in not decleared globaly, we need to declear here
+        // .trash-btn parent element = .todo element
+        const todo = item.parentElement;
+        todo.remove();
+    }
 }

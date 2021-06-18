@@ -84,6 +84,7 @@ background: linear-gradient(90deg, rgba(2,63,106,1) 0%, rgba(0,212,255,1) 33%, r
     margin-right: auto;   
   }
 
+ 
   .todo{
     display: flex;
     justify-content: flex-end;
@@ -122,21 +123,19 @@ background: linear-gradient(90deg, rgba(2,63,106,1) 0%, rgba(0,212,255,1) 33%, r
   }
 
   .trash-btn{
-    height: 100%;
+    /* height: 100%; */
     background-color: red;
     padding: 0.2rem;
     color: #f2f2f2;
   }
 
-  
- 
-
-
   /* FONT AWESOME FAVICONS */
   .fa-plus-square, .complete-btn, .trash-btn{
-    cursor: unset;
     font-size: 2rem;
+  }
 
+  .fa-trash, .fa-check{
+     pointer-events: none; 
   }
 
   
