@@ -54,4 +54,11 @@ function deleteCheck(element){
         const todo = item.parentElement;
         todo.remove();
     }
+    //Check completed Todo item
+    if(item.classList[0] === "complete-btn"){
+        const todo = item.parentElement;
+        //toggle class .completed on click
+        todo.classList.toggle('completed');
+    }
 }
+

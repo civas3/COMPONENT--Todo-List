@@ -129,6 +129,14 @@ background: linear-gradient(90deg, rgba(2,63,106,1) 0%, rgba(0,212,255,1) 33%, r
     color: #f2f2f2;
   }
 
+  /* Button on click toggle */
+.completed{
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+
+
   /* FONT AWESOME FAVICONS */
   .fa-plus-square, .complete-btn, .trash-btn{
     font-size: 2rem;
