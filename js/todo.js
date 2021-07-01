@@ -60,6 +60,7 @@ function deleteCheck(element) {
     const todo = item.parentElement;
     //adding animation on .trash-animation on click
     todo.classList.add("trash-animation");
+     removeLocalTodos(todo);
     //even listener that going to wait for the animation to finish before removing todo element
     todo.addEventListener("transitionend", function () {
       todo.remove();
@@ -126,16 +127,15 @@ function saveLocalTodos(todo) {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-
 function getTodos() {
-  //checks if there is any exsisting todos
+  //checks if there is any existing todos
   let todos;
-  //if todo does not exist , create empy array
+  //if todo does not exist , create empty array
   if (localStorage.getItem("todos") === null) {
     //empty array
     todos = [];
   } else {
-    //if I have any exsisting todo, I will parse in to array (continue adding)
+    //if I have any existing todo, I will parse in to array (continue adding)
     todos = JSON.parse(localStorage.getItem("todos"));
   }
   //looping trough the array with annonymus function
@@ -166,3 +166,33 @@ function getTodos() {
     todoList.appendChild(todoDiv);
   });
 }
+
+function removeLocalTodos(todo){
+      //checks if there is any existing todos
+  let todos;
+  //if todo does not exist , create empty array
+  if (localStorage.getItem("todos") === null) {
+    //empty array
+    todos = [];
+  } else {
+    //if I have any existing todo, I will parse in to array (continue adding)
+    todos = JSON.parse(localStorage.getItem("todos"));
+  }
+  //check what you getting 
+//   console.log(todo.children[0].innerText)
+//   console.log(todo.indexOf("apple"));
+// When clicked on the todo div 
+   const todoIndex = todo.children[0].innerText;
+   //we checking the index of one specific element and then choose how many we want to remove - in this case 1 todo
+   todos.splice(todos.indexOf(todoIndex), 1);
+   localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+// // EXAMPLE OF SPLICE METHOD
+// //array
+// const todos = ["Orange","Bannana","Apple","Pineapple"];
+// //you grab the index of the specific item in the array
+// const appleIndex = todos.indexOf("Apple");
+// //you remove the item from the array
+// todos.splice(appleIndex, 1);
+

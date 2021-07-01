@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,57 +8,191 @@
     <!-- PAGE TITLE -->
     <title>Todo List</title>
     <!-- MAIN STYLESHEET -->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
     <!-- FONT-AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- JAVASCRIPT -->
-    
+
 </head>
+
 <body>
 
     <!-- todo section -->
-<section id="todo-list">
-    <!-- row -->
-    <div class="row" style="margin-bottom: 30px; ">
-        <!-- section header -->
-        <div class="section-header"><h3>To-do List</h3></div>
-    </div>
-    <!-- row ends -->
-    <!-- row -->
-    <div class="row">
-        <!-- section body -->
-        <div class="section-body">
-            <!-- form -->
-            <form>
-                <!-- form input field -->
-                <input type="text" class="todo-input">
-                <!-- form submit button -->
-                <button class="todo-button" type="submit">
-                    <i class="fas fa-plus-square"></i>
-                </button>
-                <div class="select">
-                    <select name="todos" class="filter-todo">
-                        <option value="all">all</option>
-                        <option value="completed">completed</option>
-                        <option value="uncompleted">uncompleted</option>
-                    </select>    
-                </div>
-            </form>
-            <!-- form ends -->
-            <!-- todo container -->
-            <div class="todo-container">
-                <!-- todo list -->
-                <!--  to avoid JS error of ["cant read property contains of undefined"]  make sure no space betwneen <ul></ul> tags-->
-                <ul class="todo-list"></ul>
-                <!-- todo list ends -->
+    <section id="todo-list">
+        <!-- row -->
+        <div class="row" style="margin-bottom: 30px; ">
+            <!-- section header -->
+            <div class="section-header">
+                <h3>To-do List</h3>
             </div>
-            <!-- todo container ends -->
         </div>
-    </div>
-    <!--row ends -->
-</section>
-   
-<script src="/js/todo.js"></script>
+        <!-- row ends -->
+        <!-- row -->
+        <div class="row">
+            <!-- section body -->
+            <div class="section-body">
+                <!-- form -->
+                <form>
+                    <!-- form input field -->
+                    <input type="text" class="todo-input">
+                    <!-- form submit button -->
+                    <button class="todo-button" type="submit">
+                        <i class="fas fa-plus-square"></i>
+                    </button>
+                    <div class="select">
+                        <select name="todos" class="filter-todo">
+                            <option value="all">all</option>
+                            <option value="completed">completed</option>
+                            <option value="uncompleted">uncompleted</option>
+                        </select>
+                    </div>
+                </form>
+                <!-- form ends -->
+                <!-- todo container -->
+                <div class="todo-container">
+                    <!-- todo list -->
+                    <!--  to avoid JS error of ["cant read property contains of undefined"]  make sure no space betwneen <ul></ul> tags-->
+                    <ul class="todo-list"></ul>
+                    <!-- todo list ends -->
+                </div>
+                <!-- todo container ends -->
+            </div>
+        </div>
+        <!--row ends -->
+    </section>
+
+    <script src="/js/todo.js"></script>
 
 </body>
+
 </html>
+
+
+<!-- Create a simple page that contains:
+- 2 headings;
+- 1 paragraph;
+- Navigation with listed items;
+- A Section;
+- Footer; -->
+
+<nav>
+    <div class="logo">
+        <h1>Search Engines</h1>
+    </div>
+    <div class="nav-menu">
+        <ul class="nav-list">
+            <li><a href="https://www.ecosia.org/" target="_blank">Ecosia</a></li>
+            <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+            <li><a href="https://www.bing.com/" target="_blank">Bing</a></li>
+            <li><a href="https://www.baidu.com/" target="_blank">Baidu</a></li>
+            <li><a href="https://uk.yahoo.com/" target="_blank">Yahoo!</a></li>
+            <ul />
+    </div>
+</nav>
+
+<section>
+    <div class="section-header">
+        <h2>Top 5 Search Engines</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="section-item">
+                <div class="section-item-header">#1 - Ecosia Search Engine</div>
+                <div class="section-item-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/1/11/Ecosia_logo.png">
+                </div>
+                <div class="section-item-content">
+                    <p>Ecosia is a search engine based in Berlin, Germany. <span>It <b>donates</b> 80% of its profits to
+                            nonprofit organizations that focus on reforestation</span>. It considers itself a social
+                        business, is CO₂-negative and claims to support full financial transparency and protect the
+                        privacy of its users. Ecosia is also B Lab certified.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="section-item">
+                <div class="section-item-header">#2 - Google Search Engine</div>
+                <div class="section-item-image">
+                    <img
+                        src=" https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png">
+                </div>
+                <div class="section-item-content">
+                    <p>Google LLC is an American multinational technology company that specializes in Internet-related
+                        services and products, which include online advertising technologies, a search engine, cloud
+                        computing, software, and hardware. It is considered one of the big four Internet stocks along
+                        with Amazon, Facebook, and Apple.</p>
+                </div>
+            </div>
+            <div class="section-item">
+                <div class="section-item-header">#3 - Bing Search Engine</div>
+                <div class="section-item-image">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Bing_logo_%282016%29.svg/800px-Bing_logo_%282016%29.svg.png">
+                </div>
+                <div class="section-item-content">
+                    <p>Microsoft Bing is a web search engine owned and operated by Microsoft. The service has its
+                        origins in Microsoft's previous search engines: MSN Search, Windows Live Search and later Live
+                        Search. Bing provides a variety of search services, including web, video, image and map search
+                        products.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="section-item">
+                <div class="section-item-header">#4 - Baidu Search Engine</div>
+                <div class="section-item-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Baidu.svg/1280px-Baidu.svg.png">
+                </div>
+                <div class="section-item-content">
+                    <p>Baidu, Inc. is a Chinese multinational technology company specializing in Internet-related
+                        services and products and artificial intelligence, headquartered in Beijing's Haidian District.
+                        It is one of the largest AI and Internet companies in the world</p>
+                </div>
+            </div>
+            <div class="section-item">
+                <div class="section-item-header">#5 - Yahoo! Search Engine</div>
+                <div class="section-item-image">
+                    <img
+                        src="https://www.lifewire.com/thmb/wwmsgj3_0-ADwMt1r3qpvf-Apts=/1526x858/smart/filters:no_upscale()/yahoo-logo-2019-879b7bed612d4bbc97065dce2a0f2d73.png">
+                </div>
+                <div class="section-item-content">
+                    <p>Yahoo is an American web services provider. It is headquartered in Sunnyvale, California and is
+                        owned by Verizon Media, pending sale to investment funds managed by Apollo Global Management.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-item">
+        <div class="footer-item-logo">
+            <img
+                src="https://cdn.slidesharecdn.com/ss_thumbnails/greenpeace-130331090553-phpapp01-thumbnail-4.jpg?cb=1364720793">
+        </div>
+    </div>
+    <div class="footer-item">
+        <div class="footer-item-header">
+
+        </div>
+        <div class="footer-item-content">
+            <p>A world where everyone creates content gets confusing pretty quickly without a good search engine.</p>
+        </div>
+    </div>
+    <div class="footer-item">
+        <div class="footer-item-header">
+            <h2>Useful links</h2>
+        </div>
+        <ul class="footer-item-ref-list">
+            <li><a href="https://www.ecosia.org/" target="_blank">Ecosia</a></li>
+            <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+            <li><a href="https://www.bing.com/" target="_blank">Bing</a></li>
+            <li><a href="https://www.baidu.com/" target="_blank">Baidu</a></li>
+            <li><a href="https://uk.yahoo.com/" target="_blank">Yahoo!</a></li>
+            <ul />
+    </div>
+
+</footer>
